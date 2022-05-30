@@ -10,9 +10,6 @@ export default function Home() {
         <title>Manacá – Consultoria Ambiental</title>
         <meta name="description" content="feito por agência NÓS usando next app" />
         <link rel="icon" href="/favicon.ico" />
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-        </style>
       </Head>
       <Header/>
       <div className="container">
