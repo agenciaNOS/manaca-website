@@ -5,10 +5,9 @@ export default function Header() {
     <>
       <nav className='flex items-center flex-wrap p-3 justify-between '>
           <a className='inline-flex items-center p-2 mr-4 '>
-            <span className='text-2xl text-emerald-800 tracking-wide rounded-lg backdrop-blur-xl bg-white px-3 py-2'>
-              Manacá</span>
+            <img src="/manaca-logo-white.svg" className="h-20" alt="logo"/>
             </a>
-            <a href="https://www.instagram.com/manaca.consultoria" className='inline-flex items-center p-2 mr-4 '>
+            <a href="https://www.instagram.com/manaca.consultoria" className='ig inline-flex items-center p-2 mr-4 '>
             <span className='text-sm text-white tracking-wide'>
                 Instagram
             </span>
