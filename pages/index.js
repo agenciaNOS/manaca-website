@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content="feito por agência NÓS usando next app" />
         <link rel="icon" href="/favicon.ico" />
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+        @import url(&quot;https://fonts.googleapis.com/css2?family=Dosis&display=swap&quot;);
         </style>
       </Head>
       <Header/>
