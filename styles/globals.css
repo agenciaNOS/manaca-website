@@ -19,13 +19,28 @@ a {
   box-sizing: border-box;
 }
 
-h1, h2, h3, p {
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
   color: #243521;
-
 }
 
-h1, h2, h3 {
+h2 {
+  font-size: 1.5rem;
   font-weight: 700;
+  color: #243521;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #243521;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #243521;
 }
 
 .background {
