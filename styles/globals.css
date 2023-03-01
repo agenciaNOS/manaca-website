@@ -58,7 +58,6 @@ p {
   align-items: center;
   z-index: 1;
   margin: 2rem auto;
-  background-color: white;
 }
 
 .main-footer {
@@ -96,11 +95,6 @@ p {
   max-width: 300px;
   border-right: 2px solid #243521;
   border-bottom: 4px solid #243521;
-  color: white;
-}
-
-.card h2 {
-  color: white;
 }
 
 .ig {

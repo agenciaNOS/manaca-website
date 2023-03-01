@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
-import Intro from '../components/Intro'
+import Hero from '../components/Hero'
 import About from '../components/About'
 import Services from '../components/Services'
 import Clients from '../components/Clients'
@@ -15,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="">
+      <div>
         <Head>
           <title>Manacá – Consultoria Ambiental</title>
           <meta name="description" content="feito por agência NÓS usando next app" />
@@ -24,15 +23,15 @@ export default function Home() {
             @import url(&quot;https://fonts.googleapis.com/css2?family=Dosis&display=swap&quot;);
           </style>
         </Head>
-        <main className={styles.main}>
+        <main>
           <Header />
-          <Intro heroSection={heroSection} />
+          <Hero heroSection={heroSection} />
           <About aboutSection={aboutSection} />
           <Services servicesSection={servicesSection} />
           <Clients clientsSection={clientsSection} />
           <Contact contactSection={contactSection} />
         </main>
-        <footer className={styles.footer}>
+        <footer className="container mx-auto px-4">
           <p>Criado com NextJS - Desenvolvido por <a href="https://agencianos.com.br">agência NÓS</a></p>
         </footer>
       </div>
