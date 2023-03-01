@@ -9,17 +9,17 @@ export const copyData = {
             "name": "Thaís Scognamiglio",
             "role": "Sócia-fundadora",
             "about": "Bióloga (2009), com especialização em Gestão Ambiental e Sustentabilidade (2012) e em Educação Ambiental (2016), com experiência na área de consultoria empresarial, gestão de resíduos de obras, projetos de loteamentos urbanos e coordenação de programas ambientais.",
-            "image": "/sample-foto.jpeg"
+            "image": "/thais.jpeg"
         },
         "partnerTwo": {
             "name": "Giovanna Caldeira",
             "role": "Sócia",
             "about": "Engenheira Ambiental e Sanitarista (2020), com experiência na área de projetos e estudos de engenharia e gerenciamento de áreas contaminadas.",
-            "image": "/sample-foto.jpeg"
+            "image": "/giovana.jpeg"
         }
     },
     "servicesSection": {
-        "introText": "Desde 2017, promove soluções ambientais aos seus clientes, oferecendo apoio em todas as etapas, do projeto à execução",
+        "introText": "Desde 2017, a Manacá promove soluções ambientais aos seus clientes, oferecendo apoio em todas as etapas, do projeto à execução",
         "areas": [
             {
                 "title": "Indústrias",
