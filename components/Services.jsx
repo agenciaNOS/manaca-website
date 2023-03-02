@@ -5,11 +5,11 @@ import React from 'react'
 const properIcon = (area) => {
     switch (area.title) {
         case 'Indústrias':
-        return <FaIndustry />
+        return <FaIndustry className='text-4xl bg-manaca text-white rounded-full p-2' />
         case 'Empreendimentos urbanos':
-        return <FaBuilding />
+        return <FaBuilding className='text-4xl bg-manaca text-white rounded-full p-2' />
         case 'Empreendimentos rurais':
-        return <FaBuilding />
+        return <FaBuilding className='text-4xl bg-manaca text-white rounded-full p-2' />
 }
 }
 
@@ -23,7 +23,7 @@ return (
     </div>
     <div className="container mx-auto px-4">
         {servicesSection.areas.map((area, index) => (
-        <div key={index} className="justify-center items-center my-5">
+        <div key={index} className="justify-center items-center my-12">
             <div>
                 {properIcon(area)}
                 <h1>
@@ -33,10 +33,10 @@ return (
                     {area.description}
                 </p>
             </div>
-            <div className="flex flex-col md:flex-row justify-center items-start my-5 flex-wrap">
+            <div className="flex flex-col md:flex-row justify-start items-start my-4 flex-wrap">
                 {area.services.map((service, index) => (
                 <div key={index}
-                    className="flex flex-col md:flex-row justify-center items-center my-5 mx-5 rounded py-4 px-4 w-1/2 md:w-1/4">
+                    className="flex flex-col md:flex-row justify-center items-center mx-4 m-2 rounded p-4 w-1/2 md:w-1/4 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer">
                     <div>
                         <h2>
                             {service.title}
