@@ -16,14 +16,14 @@ const properIcon = (area) => {
 function Services({ servicesSection }) {
 return (
 <>
-    <div className="container mx-auto px-4">
-        <p className="md:text-3xl text-xl text-center font-bold py-10">
+    <div className="container mx-auto">
+        <p className="md:text-3xl text-xl font-bold mt-8">
             {servicesSection.introText}
         </p>
     </div>
     <div className="container mx-auto px-4">
         {servicesSection.areas.map((area, index) => (
-        <div key={index} className="justify-center items-center my-12">
+        <div key={index} className="justify-center items-center">
             <div>
                 {properIcon(area)}
                 <h1>
@@ -33,10 +33,10 @@ return (
                     {area.description}
                 </p>
             </div>
-            <div className="flex flex-col md:flex-row justify-start items-start my-4 flex-wrap">
+            <div className="flex flex-col md:flex-row justify-start items-start my-8 flex-wrap">
                 {area.services.map((service, index) => (
                 <div key={index}
-                    className="flex flex-col md:flex-row justify-center items-center mx-4 m-2 rounded p-4 w-1/2 md:w-1/4 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer">
+                    className="flex flex-col md:flex-row justify-center items-center mb-8 mr-6 rounded p-4 sm:w-1/4 w-1/1 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer">
                     <div>
                         <h2>
                             {service.title}

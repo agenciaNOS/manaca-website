@@ -15,8 +15,8 @@ return (
         </p>
     </div>
     <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-center items-start my-10">
-            <div className="md:mr-10 flex flex-col justify-center items-center mb-10 md:mb-0 w-72">
+        <div className="flex flex-col md:flex-row justify-center items-center my-10 w-100">
+            <div className="flex flex-col justify-center items-center mb-10 md:mr-10 f md:mb-0 w-72">
                 <Image src={partnerOne.image} alt={partnerOne.name} width={200} height={200}
                     className="rounded-full mb-5" />
                 <p className="text-center text-white mt-5">
