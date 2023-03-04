@@ -6,7 +6,8 @@ import Services from '../components/Services'
 import Clients from '../components/Clients'
 import Contact from '../components/Contact'
 import { copyData } from '../content/copy'
-import { clientData } from '../content/clients'
+import notion from '../notion'
+
 
 const { heroSection, aboutSection, servicesSection, clientsSection, contactSection } = copyData
 

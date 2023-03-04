@@ -23,7 +23,8 @@ function Contact({ contactSection }) {
        // send data to Notion API
        fetch('/api/notion', {
             method: 'POST',
-            body: JSON.stringify(submitedData)
+            body: JSON.stringify({ name: 'John Doe', email: 'teste@email.com', message: 'Mensagem de teste' })
+
         })
                 
     }
