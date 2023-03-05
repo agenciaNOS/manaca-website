@@ -9,7 +9,7 @@ module.exports = {
       white: '#FFFFFF',
       black: '#000000',
       secondary: '#5b145c',
-  },
+    },
     extend: {},
   },
   plugins: [],

@@ -1,9 +1,10 @@
 import React from 'react'
+import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
 
 function Contact({ contactSection }) {
-    const [formData, setFormData] = React.useState({
-        name: '',
-        email: '',
+    const [, setFormData] = React.useState({
+        Name: '',
+        Email: '',
         telephone: '',
         message: ''
     })
@@ -17,16 +18,13 @@ function Contact({ contactSection }) {
                 }
             }
         })
-        console.log(submitedData)        
         setFormData(submitedData)
 
-       // send data to Notion API
-       fetch('/api/notion', {
+        // send data to Notion API
+        fetch('/api/notion', {
             method: 'POST',
-            body: JSON.stringify({ name: 'John Doe', email: 'teste@email.com', message: 'Mensagem de teste' })
-
+            body: JSON.stringify(submitedData)
         })
-                
     }
     return (
         <div className="mx-auto px-4 bg-secondary bg-cover bg-center py-20" id="contact">
@@ -37,26 +35,53 @@ function Contact({ contactSection }) {
                 {contactSection.description}
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center my-5">
-                <div className="flex flex-col md:flex-row justify-center items-center my-5 rounded py-4 px-4 w-1/1">
-                    <form className="flex flex-col justify-center items-center w-96" onSubmit={e => e.preventDefault()}>
-                        <input id="name" className="border-2 border-gray-300 p-2 my-2 rounded w-full" type="text" placeholder="Nome" />
-                        <input id="email" className="border-2 border-gray-300 p-2 my-2 rounded w-full" type="text" placeholder="E-mail" />
+                <div className="flex flex-col md:flex-row justify-center items-stretch my-5 rounded py-4 px-4 w-1/1">
+                    <form className="w-82 block" onSubmit={e => e.preventDefault()}>
+                        <input id="Name" className="border-2 border-gray-300 p-2 my-2 rounded w-full" type="text" placeholder="Nome" />
+                        <input id="Email" className="border-2 border-gray-300 p-2 my-2 rounded w-full" type="text" placeholder="E-mail" />
                         <input id="telephone" className="border-2 border-gray-300 p-2 my-2 rounded w-full" type="text" placeholder="Telefone" />
-                        <textarea id="message" className="border-2 border-gray-300 p-2 my-2 rounded w-full" type="text" placeholder="Mensagem" />
-                        <button className="bg-blue-500 text-white p-2 my-2 rounded w-full" type="submit" onClick={handleSubmit}>
+                        <select id="serviceType" className="border-2 border-gray-300 p-2 my-2 rounded w-full">
+                            <option value="Nenhum">Selecione o tipo de serviço</option>
+                            <option value="Planejamento e Licenciamento Ambiental">Planejamento e Licenciamento Ambiental</option>
+                            <option value="Documentações Ambientais">Documentações Ambientais</option>
+                            <option value="Controle Ambiental e gestão de condicionantes">Controle Ambiental e gestão de condicionantes</option>
+                            <option value='Regulizaricação de Empreendimentos urbanos'>Empreendimentos urbanos</option>
+                            <option value='Regulizaricação de Empreendimentos rurais'>Empreendimentos rurais</option>
+                            <option value='Regulizaricação de Loteamentos'>Loteamentos</option>
+                            <option value='Outros'>Outros</option>
+                        </select>
+                        <button className="bg-white text-secondary p-2 my-2 rounded w-full" type="submit" onClick={handleSubmit}>
                             Enviar
                         </button>
                     </form>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-center items-center my-5 mx-5 rounded py-4 px-4 w-1/2 md:w-1/4">
-                <div>
-                    <h2 className="text-xl font-bold text-white">
-                        {contactSection.address}
-                    </h2>
-                    <p className="text-white">
-                        {contactSection.addressText}
-                    </p>
+            <div className="flex flex-col md:flex-row justify-center items-center my-5 mx-5 rounded py-4 md:px-4 md:w-full md:items-baseline">
+                <div className="w-80 my-5">
+                    <div className="flex justify-center items-center m-4 p-5 bg-white rounded-full mx-2 w-16 h-16">
+                        <FaMapMarkerAlt className="text-3xl text-secondary" />
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-bold text-white">
+                            {contactSection.address}
+                        </h2>
+                        <p className="text-white">
+                            {contactSection.addressText}
+                        </p>
+                    </div>
+                </div>
+                <div className="w-80 my-5">
+                    <div className="flex justify-center items-center m-4 p-5 bg-white rounded-full mx-2 w-16 h-16">
+                        <FaPhoneAlt className="text-3xl text-secondary" />
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-bold text-white">
+                            Telefone
+                        </h2>
+                        <p className="text-white">
+                            +55 11 99999-9999
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

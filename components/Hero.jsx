@@ -7,11 +7,11 @@ function Hero({ heroSection }) {
     // create a new layer to overlay
     <div className="background text-white flex flex-col justify-center items-center">
       <div className="bg-black bg-opacity-50 backdrop-filter w-screen h-screen flex flex-col justify-center items-center">
-          <h1 className="md:text-6xl text-2xl text-center font-bold my-2 md:my-5 text-white">
+          <h1 className="md:text-6xl text-5xl text-center font-bold my-2 md:my-5 text-white">
             {title}
           </h1>
 
-          <p className="md:text-3xl text-xl text-center text-white">
+          <p className="md:text-xl text-2xl text-center text-white">
            {CTA}
           </p>
 

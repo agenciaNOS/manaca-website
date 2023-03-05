@@ -15,7 +15,7 @@ return (
         </p>
     </div>
     <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-center items-center my-10 w-100">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-baseline my-10 w-100">
             <div className="flex flex-col justify-center items-center mb-10 md:mr-10 f md:mb-0 w-72">
                 <Image src={partnerOne.image} alt={partnerOne.name} width={200} height={200}
                     className="rounded-full mb-5" />

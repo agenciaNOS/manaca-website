@@ -5,43 +5,61 @@ const notion = new Client({
 });
 
 export default async function handler(req, res) {
+  const data = await req.body;
+  const JSONformatedData = JSON.parse(data);
+  const formatedData = {
+    Nome: {
+      title: [
+        {
+          text: {
+            content: JSONformatedData.Name,
+          },
+        },
+      ],
+    },
+    Email: {
+      email: JSONformatedData.Email,
+    },
+    Telefone: {
+      rich_text: [
+        {
+          text: {
+            content: JSONformatedData.telephone,
+          },
+        },
+      ],
+    },
+    Serviço: {
+      multi_select: [
+        {
+          name: JSONformatedData.serviceType,
+        },
+      ],
+    },
+  };
+
   if (req.method !== 'POST') {
     return res
       .status(405)
       .json({ message: `${req.method} requests are not allowed` });
   }
+
   try {
-    const { name, email, message } = JSON.parse(req.body);
-    await notion.pages.create({
+    const response = await notion.pages.create({
       parent: {
         database_id: process.env.NOTION_DATABASE_ID,
       },
       properties: {
-        Name: {
-          title: [
-            {
-              text: {
-                content: name,
-              },
-            },
-          ],
-        },
-        Email: {
-          email: email,
-        },
-        Message: {
-          rich_text: [
-            {
-              text: {
-                content: message,
-              },
-            },
-          ],
-        },
+        ...formatedData,
       },
     });
-    res.status(201).json({ msg: 'Success' });
   } catch (error) {
-    res.status(500).json({ msg: 'There was an error', error });
+    if (error.code === 'unauthorized') {
+      console.error('Unauthorized: the provided API key is invalid');
+    } else {
+      console.error(error)
+    }
   }
+
+  res.status(200).json({ message: 'Success' });
 }
