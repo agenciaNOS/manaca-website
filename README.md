@@ -1,5 +1,7 @@
 ### Website criado para a Manacá - Consultoria Ambiental
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/882178dbcaa240cfb6ad7697fa4cbfed)](https://app.codacy.com/gh/marcelxv/manaca-website?utm_source=github.com&utm_medium=referral&utm_content=marcelxv/manaca-website&utm_campaign=Badge_Grade_Settings)
+
 ## Getting Started
 
 First, run the development server:
