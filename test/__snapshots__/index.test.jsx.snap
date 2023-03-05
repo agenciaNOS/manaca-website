@@ -1,0 +1,898 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <main>
+      <nav
+        class="flex items-center flex-wrap p-1 justify-between bg-manaca top-0 z-50"
+      >
+        <a
+          class="inline-flex items-center"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27180%27%20height=%27100%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt="Manacá"
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+            />
+            <noscript />
+          </span>
+        </a>
+        <a
+          class="inline-flex items-center px-3 py-1 mr-4 bg-white rounded-xl text-manaca"
+          href="https://www.instagram.com/manaca.consultoria"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <span>
+            Instagram
+          </span>
+          <svg
+            class="ml-2 text-manaca"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            />
+          </svg>
+        </a>
+      </nav>
+      <div
+        class="background text-white flex flex-col justify-center items-center"
+      >
+        <div
+          class="bg-black bg-opacity-50 backdrop-filter w-screen h-screen flex flex-col justify-center items-center"
+        >
+          <h1
+            class="md:text-6xl text-5xl text-center font-bold my-2 md:my-5 text-white"
+          >
+            Precisando de soluções ambientais?
+          </h1>
+          <p
+            class="md:text-xl text-2xl text-center text-white"
+          >
+            Nós podemos lhe ajudar!
+          </p>
+          <div
+            class="flex flex-row md:flex-row justify-center items-center my-5"
+          >
+            <a
+              class="card bg-manaca flex items-center"
+              href="https://api.whatsapp.com/send?phone=5535992266995&text=Ola%2C%20Manaca!"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                class="inline-flex"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                />
+              </svg>
+            </a>
+            <a
+              class="card bg-manaca flex items-center"
+              href="mailto:manaca.camanducaia@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                class="inline-flex "
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center"
+          >
+            <p
+              class="text-white my-8"
+            >
+              Saiba mais sobre nós
+            </p>
+            <a
+              class="text-white border-2 border-white rounded-full p-2 hover:bg-manaca hover:border-manaca transition duration-500 ease-in-out animate-bounce"
+              href="#about"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-secondary bg-cover bg-center py-20"
+        id="about"
+      >
+        <p
+          class="text-center"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27200%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt="Manacá"
+              class="mx-auto block text-center w-full"
+              data-nimg="intrinsic"
+              decoding="async"
+              display="block"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </span>
+        </p>
+        <div
+          class="container px-4"
+        >
+          <p
+            class="md:text-2xl text-xl text-center text-white font-bold py-10"
+          >
+            A Manacá uma empresa de consultoria que, desde 2017, promove soluções ambientais aos seus clientes, oferecendo apoio em todas as etapas, do projeto à execução, seja direta ou indiretamente por meio dos parceiros (topografia, engenharia e outros). Atuamos na região do extremo sul de Minas Gerais, principalmente nas cidades de Extrema, Toledo, Itapeva, Camanducaia, Monte Verde, Cambuí, Senador Amaral, Estiva, Pouso Alegre e outras. Nossos princípios são a ética, empatia, transparência, responsabilidade e sustentabilidade.
+          </p>
+        </div>
+        <div
+          class="container mx-auto px-4"
+        >
+          <div
+            class="flex flex-col md:flex-row justify-center items-center md:items-baseline my-10 w-100"
+          >
+            <div
+              class="flex flex-col justify-center items-center mb-10 md:mr-10 f md:mb-0 w-72"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27200%27%20height=%27200%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="Thaís Scognamiglio"
+                  class="rounded-full mb-5"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+              <p
+                class="text-center text-white mt-5"
+              >
+                Thaís Scognamiglio
+              </p>
+              <p
+                class="text-center text-white mb-5"
+              >
+                Sócia-fundadora
+              </p>
+              <p
+                class="text-center text-white text-sm"
+              >
+                Bióloga (2009), com especialização em Gestão Ambiental e Sustentabilidade (2012) e em Educação Ambiental (2016), com experiência na área de consultoria empresarial, gestão de resíduos de obras, projetos de loteamentos urbanos e coordenação de programas ambientais.
+              </p>
+            </div>
+            <div
+              class="md:mr-10 flex flex-col justify-center items-center w-72"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27200%27%20height=%27200%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="Thaís Scognamiglio"
+                  class="rounded-full mb-5"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+              <p
+                class="text-center text-white mt-5"
+              >
+                Giovanna Caldeira
+              </p>
+              <p
+                class="text-center text-white mb-5"
+              >
+                Sócia
+              </p>
+              <p
+                class="text-center text-white text-sm"
+              >
+                Engenheira Ambiental e Sanitarista (2020), com experiência na área de projetos e estudos de engenharia e gerenciamento de áreas contaminadas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container mx-auto"
+      >
+        <p
+          class="md:text-3xl text-xl font-bold mt-8"
+        >
+          A Manacá promove soluções ambientais aos seus clientes, oferecendo apoio em todas as etapas, do projeto à execução. Confira nossos serviços:
+        </p>
+      </div>
+      <div
+        class="container mx-auto px-4"
+      >
+        <div
+          class="justify-center items-center"
+        >
+          <div>
+            <div
+              class="flex justify-center items-center m-4 p-5 bg-secondary rounded-full mx-2 w-16 h-16"
+            >
+              <svg
+                class="text-3xl text-white"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M475.115 163.781L336 252.309v-68.28c0-18.916-20.931-30.399-36.885-20.248L160 252.309V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56v400c0 13.255 10.745 24 24 24h464c13.255 0 24-10.745 24-24V184.029c0-18.917-20.931-30.399-36.885-20.248z"
+                />
+              </svg>
+            </div>
+            <h1>
+              Indústrias
+            </h1>
+            <p>
+              A Manacá oferece serviços de consultoria ambiental para indústrias, com foco em licenciamento ambiental, gestão de resíduos, gestão de águas, gestão de riscos ambientais e gestão de áreas contaminadas. Nossos serviços são personalizados para cada cliente, de acordo com as necessidades e características de cada empresa.
+            </p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-start items-start my-8 flex-wrap"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-center items-center mb-8 mr-6 rounded p-4 sm:w-1/4 w-1/1 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+            >
+              <div>
+                <h2>
+                  Planejamento e Licenciamento Ambiental
+                </h2>
+                <ul
+                  class="list-disc"
+                >
+                  <li>
+                    Estudo de Viabilidade Ambiental (EVA)
+                  </li>
+                  <li>
+                    Licença prévia (LP), de instalação (LI) e de operação (LO)
+                  </li>
+                  <li>
+                    Licença Ambiental Simplificada (LAS)
+                  </li>
+                  <li>
+                    Relatório Ambiental Simplificado (RAS)
+                  </li>
+                  <li>
+                    Plano de Controle Ambiental (PCA)e relatório (RCA)
+                  </li>
+                  <li>
+                    Dispensa e renovação de Licença Ambiental
+                  </li>
+                  <li>
+                    Estudo de Critérios Locacionais
+                  </li>
+                  <li>
+                    Plantas Ambientais
+                  </li>
+                  <li>
+                    Outorga de Uso de Recursos Hídricos e outros
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row justify-center items-center mb-8 mr-6 rounded p-4 sm:w-1/4 w-1/1 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+            >
+              <div>
+                <h2>
+                  Documentações – IBAMA
+                </h2>
+                <ul
+                  class="list-disc"
+                >
+                  <li>
+                    Cadastro Técnico Federal de Atividades Potencialmente Poluidoras (CTF-APP)
+                  </li>
+                  <li>
+                    Cadastro Técnico Federal de Atividades e Instrumentos de Defesa Ambiental (CTF-AIDA)
+                  </li>
+                  <li>
+                    Relatório Anual de Atividades Potencialmente Poluidoras (RAPP)
+                  </li>
+                  <li>
+                    Emissão de Taxas de Controle e Fiscalização Ambiental (TCFA)
+                  </li>
+                  <li>
+                    Licença para transporte de produtos perigosos e outros
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row justify-center items-center mb-8 mr-6 rounded p-4 sm:w-1/4 w-1/1 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+            >
+              <div>
+                <h2>
+                  Controle Ambiental e gestão de condicionantes
+                </h2>
+                <ul
+                  class="list-disc"
+                >
+                  <li>
+                    Declaração anual de uso de recursos hídricos (DAURH)
+                  </li>
+                  <li>
+                    Declaração anual de Carga Poluidora (DCP) – IGAM
+                  </li>
+                  <li>
+                    Gestão de Resíduos Sólidos (Manifesto de Transporte de Resíduos – MTR e SINIR, Declaração de Movimentação de Resíduos – DMR)
+                  </li>
+                  <li>
+                    Plano de Gerenciamento de Resíduos Sólidos – PGRS
+                  </li>
+                  <li>
+                    Assessoria técnica e consultoria em questões ambientais
+                  </li>
+                  <li>
+                    Programas de Educação Ambiental, palestras, treinamentos e oficinas e outros.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="justify-center items-center"
+        >
+          <div>
+            <div
+              class="flex justify-center items-center m-4 p-5 bg-secondary rounded-full mx-2 w-16 h-16"
+            >
+              <svg
+                class="text-3xl text-white"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"
+                />
+              </svg>
+            </div>
+            <h1>
+              Empreendimentos urbanos
+            </h1>
+            <p>
+              A Manacá oferece serviços de consultoria ambiental para empreendimentos urbanos, com foco em licenciamento ambiental, gestão de resíduos, gestão de águas, gestão de riscos ambientais e gestão de áreas contaminadas. Nossos serviços são personalizados para cada cliente, de acordo com as necessidades e características de cada empreendimento.
+            </p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-start items-start my-8 flex-wrap"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-center items-center mb-8 mr-6 rounded p-4 sm:w-1/4 w-1/1 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+            >
+              <div>
+                <h2>
+                  Intervenções e regularizações ambientais
+                </h2>
+                <ul
+                  class="list-disc"
+                >
+                  <li>
+                    Documento Autorizativo para Intervenção Ambiental
+                  </li>
+                  <li>
+                    Projeto de Intervenção e de Compensação
+                  </li>
+                  <li>
+                    Estudo Técnico para regularização em APPs urbanas
+                  </li>
+                  <li>
+                    Laudo de Fauna Silvestre Terrestre
+                  </li>
+                  <li>
+                    Projeto de Restituição de Flora – PTRF
+                  </li>
+                  <li>
+                    Relatório de Regularização Ambiental
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row justify-center items-center mb-8 mr-6 rounded p-4 sm:w-1/4 w-1/1 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+            >
+              <div>
+                <h2>
+                  Loteamentos
+                </h2>
+                <ul
+                  class="list-disc"
+                >
+                  <li>
+                    Laudo de Caracterização de Vegetação
+                  </li>
+                  <li>
+                    Projeto de Arborização Urbana
+                  </li>
+                  <li>
+                    Acompanhamento de execução de plantios
+                  </li>
+                  <li>
+                    Assessoria técnica e consultoria ambiental
+                  </li>
+                  <li>
+                    Plano de Gerenciamento de Resíduos da Construção Civil – PGRCC
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="justify-center items-center"
+        >
+          <div>
+            <div
+              class="flex justify-center items-center m-4 p-5 bg-secondary rounded-full mx-2 w-16 h-16"
+            >
+              <svg
+                class="text-3xl text-white"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M528 336c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 112c-13.23 0-24-10.77-24-24s10.77-24 24-24 24 10.77 24 24-10.77 24-24 24zm80-288h-64v-40.2c0-14.12 4.7-27.76 13.15-38.84 4.42-5.8 3.55-14.06-1.32-19.49L534.2 37.3c-6.66-7.45-18.32-6.92-24.7.78C490.58 60.9 480 89.81 480 119.8V160H377.67L321.58 29.14A47.914 47.914 0 0 0 277.45 0H144c-26.47 0-48 21.53-48 48v146.52c-8.63-6.73-20.96-6.46-28.89 1.47L36 227.1c-8.59 8.59-8.59 22.52 0 31.11l5.06 5.06c-4.99 9.26-8.96 18.82-11.91 28.72H22c-12.15 0-22 9.85-22 22v44c0 12.15 9.85 22 22 22h7.14c2.96 9.91 6.92 19.46 11.91 28.73l-5.06 5.06c-8.59 8.59-8.59 22.52 0 31.11L67.1 476c8.59 8.59 22.52 8.59 31.11 0l5.06-5.06c9.26 4.99 18.82 8.96 28.72 11.91V490c0 12.15 9.85 22 22 22h44c12.15 0 22-9.85 22-22v-7.14c9.9-2.95 19.46-6.92 28.72-11.91l5.06 5.06c8.59 8.59 22.52 8.59 31.11 0l31.11-31.11c8.59-8.59 8.59-22.52 0-31.11l-5.06-5.06c4.99-9.26 8.96-18.82 11.91-28.72H330c12.15 0 22-9.85 22-22v-6h80.54c21.91-28.99 56.32-48 95.46-48 18.64 0 36.07 4.61 51.8 12.2l50.82-50.82c6-6 9.37-14.14 9.37-22.63V192c.01-17.67-14.32-32-31.99-32zM176 416c-44.18 0-80-35.82-80-80s35.82-80 80-80 80 35.82 80 80-35.82 80-80 80zm22-256h-38V64h106.89l41.15 96H198z"
+                />
+              </svg>
+            </div>
+            <h1>
+              Empreendimentos rurais
+            </h1>
+            <p>
+              A Manacá oferece serviços de consultoria ambiental para empreendimentos rurais, com foco em licenciamento ambiental, gestão de resíduos, gestão de águas, gestão de riscos ambientais e gestão de áreas contaminadas. Nossos serviços são personalizados para cada cliente, de acordo com as necessidades e características de cada empreendimento.
+            </p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-start items-start my-8 flex-wrap"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-center items-center mb-8 mr-6 rounded p-4 sm:w-1/4 w-1/1 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+            >
+              <div>
+                <h2>
+                  Intervenções e regularizações ambientais
+                </h2>
+                <ul
+                  class="list-disc"
+                >
+                  <li>
+                    Documento Autorizativo para Intervenção Ambiental
+                  </li>
+                  <li>
+                    Projeto de Intervenção e de Compensação
+                  </li>
+                  <li>
+                    Projeto de Restituição de Flora – PTRF
+                  </li>
+                  <li>
+                    Acompanhamento técnico de plantios de nativas
+                  </li>
+                  <li>
+                    Assessoria e consultoria técnica
+                  </li>
+                  <li>
+                    Projeto de Recuperação de Área Degradada – PRAD
+                  </li>
+                  <li>
+                    Simples Declaração para Intervenção Ambiental
+                  </li>
+                  <li>
+                    Cadastro Ambiental Rural
+                  </li>
+                  <li>
+                    Outorga de Uso de Recursos Hídricos
+                  </li>
+                  <li>
+                    Cadastro de Uso Insignificante
+                  </li>
+                  <li>
+                    Cadastro de Uso isento de outorga
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container mx-auto"
+      >
+        <h1
+          class="text-center text-4xl font-bold text-primary my-10"
+        >
+          Clientes
+        </h1>
+        <ul
+          class="flex flex-row justify-center items-baseline my-5 flex-wrap"
+        >
+          <div
+            class="mx-5 my-1 w-1/2 md:w-1/5 lg:w-1/6"
+          >
+            <p
+              class="text-center"
+            />
+            <h3
+              class="text-center text-2xl font-bold text-secondary m-6"
+            >
+              Leggett & Platt do Brasil
+            </h3>
+          </div>
+          <div
+            class="mx-5 my-1 w-1/2 md:w-1/5 lg:w-1/6"
+          >
+            <p
+              class="text-center"
+            />
+            <h3
+              class="text-center text-2xl font-bold text-secondary m-6"
+            >
+              MVF Lavadoras
+            </h3>
+          </div>
+          <div
+            class="mx-5 my-1 w-1/2 md:w-1/5 lg:w-1/6"
+          >
+            <p
+              class="text-center"
+            />
+            <h3
+              class="text-center text-2xl font-bold text-secondary m-6"
+            >
+              Gases do Sul
+            </h3>
+          </div>
+          <div
+            class="mx-5 my-1 w-1/2 md:w-1/5 lg:w-1/6"
+          >
+            <p
+              class="text-center"
+            />
+            <h3
+              class="text-center text-2xl font-bold text-secondary m-6"
+            >
+              Romar Metais
+            </h3>
+          </div>
+          <div
+            class="mx-5 my-1 w-1/2 md:w-1/5 lg:w-1/6"
+          >
+            <p
+              class="text-center"
+            />
+            <h3
+              class="text-center text-2xl font-bold text-secondary m-6"
+            >
+              Sítio Teko Porã
+            </h3>
+          </div>
+          <div
+            class="mx-5 my-1 w-1/2 md:w-1/5 lg:w-1/6"
+          >
+            <p
+              class="text-center"
+            />
+            <h3
+              class="text-center text-2xl font-bold text-secondary m-6"
+            >
+              Condomínio Reserva Grinberg
+            </h3>
+          </div>
+          <div
+            class="mx-5 my-1 w-1/2 md:w-1/5 lg:w-1/6"
+          >
+            <p
+              class="text-center"
+            />
+            <h3
+              class="text-center text-2xl font-bold text-secondary m-6"
+            >
+              Loteamento Recanto Eucaliptal
+            </h3>
+          </div>
+          <div
+            class="mx-5 my-1 w-1/2 md:w-1/5 lg:w-1/6"
+          >
+            <p
+              class="text-center"
+            />
+            <h3
+              class="text-center text-2xl font-bold text-secondary m-6"
+            >
+              Residencial Pitangueiras
+            </h3>
+          </div>
+        </ul>
+      </div>
+      <div
+        class="mx-auto px-4 bg-secondary bg-cover bg-center py-20"
+        id="contact"
+      >
+        <h1
+          class="text-center text-2xl md:text-4xl font-bold text-white"
+        >
+          Contato
+        </h1>
+        <p
+          class="text-center text-xl md:text-2xl font-bold py-10 text-white"
+        >
+          Tem dúvidas ou precisa de um orçamento? Preencha o formulário abaixo
+        </p>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center my-5"
+        >
+          <div
+            class="flex flex-col md:flex-row justify-center items-stretch my-5 rounded py-4 px-4 w-1/1"
+          >
+            <form
+              class="w-82 block"
+            >
+              <input
+                class="border-2 border-gray-300 p-2 my-2 rounded w-full"
+                id="Name"
+                placeholder="Nome"
+                type="text"
+              />
+              <input
+                class="border-2 border-gray-300 p-2 my-2 rounded w-full"
+                id="Email"
+                placeholder="E-mail"
+                type="text"
+              />
+              <input
+                class="border-2 border-gray-300 p-2 my-2 rounded w-full"
+                id="telephone"
+                placeholder="Telefone"
+                type="text"
+              />
+              <select
+                class="border-2 border-gray-300 p-2 my-2 rounded w-full"
+                id="serviceType"
+              >
+                <option
+                  value="Nenhum"
+                >
+                  Selecione o tipo de serviço
+                </option>
+                <option
+                  value="Planejamento e Licenciamento Ambiental"
+                >
+                  Planejamento e Licenciamento Ambiental
+                </option>
+                <option
+                  value="Documentações Ambientais"
+                >
+                  Documentações Ambientais
+                </option>
+                <option
+                  value="Controle Ambiental e gestão de condicionantes"
+                >
+                  Controle Ambiental e gestão de condicionantes
+                </option>
+                <option
+                  value="Regulizaricação de Empreendimentos urbanos"
+                >
+                  Empreendimentos urbanos
+                </option>
+                <option
+                  value="Regulizaricação de Empreendimentos rurais"
+                >
+                  Empreendimentos rurais
+                </option>
+                <option
+                  value="Regulizaricação de Loteamentos"
+                >
+                  Loteamentos
+                </option>
+                <option
+                  value="Outros"
+                >
+                  Outros
+                </option>
+              </select>
+              <button
+                class="bg-white text-secondary p-2 my-2 rounded w-full"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center my-5 mx-5 rounded py-4 md:px-4 md:w-full md:items-baseline"
+        >
+          <div
+            class="w-80 my-5"
+          >
+            <div
+              class="flex justify-center items-center m-4 p-5 bg-white rounded-full mx-2 w-16 h-16"
+            >
+              <svg
+                class="text-3xl text-secondary"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 384 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h2
+                class="text-xl font-bold text-white"
+              >
+                Endereço
+              </h2>
+              <p
+                class="text-white"
+              >
+                Rua Silviano Brandão, nº 185 – Sala 1, Centro, Camanducaia/MG
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-80 my-5"
+          >
+            <div
+              class="flex justify-center items-center m-4 p-5 bg-white rounded-full mx-2 w-16 h-16"
+            >
+              <svg
+                class="text-3xl text-secondary"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h2
+                class="text-xl font-bold text-white"
+              >
+                Telefone
+              </h2>
+              <p
+                class="text-white"
+              >
+                +55 11 99999-9999
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="container mx-auto px-4"
+    >
+      <p>
+        Criado com NextJS - Desenvolvido por 
+        <a
+          href="https://agencianos.com.br"
+        >
+          agência NÓS
+        </a>
+      </p>
+    </footer>
+  </div>
+</DocumentFragment>
+`;
