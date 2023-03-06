@@ -45,7 +45,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const response = await notion.pages.create({
+    await notion.pages.create({
       parent: {
         database_id: process.env.NOTION_DATABASE_ID,
       },
