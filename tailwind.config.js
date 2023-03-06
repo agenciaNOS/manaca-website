@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     colors: {
       manaca: '#34824E',
-  },
+      white: '#FFFFFF',
+      black: '#000000',
+      secondary: '#5b145c',
+    },
     extend: {},
   },
   plugins: [],

@@ -17,15 +17,31 @@ a {
 
 * {
   box-sizing: border-box;
+  list-style: none;
 }
 
-h1, h2, h3, p {
-  color: #243521;
-
-}
-
-h1, h2, h3 {
+h1 {
+  font-size: 2rem;
   font-weight: 700;
+  color: #243521;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #243521;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #243521;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #243521;
 }
 
 .background {
@@ -43,7 +59,6 @@ h1, h2, h3 {
   align-items: center;
   z-index: 1;
   margin: 2rem auto;
-  background-color: white;
 }
 
 .main-footer {
@@ -81,11 +96,6 @@ h1, h2, h3 {
   max-width: 300px;
   border-right: 2px solid #243521;
   border-bottom: 4px solid #243521;
-  color: white;
-}
-
-.card h2 {
-  color: white;
 }
 
 .ig {
