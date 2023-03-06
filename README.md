@@ -1,5 +1,7 @@
 ### Website criado para a Manacá - Consultoria Ambiental
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=marcelxv_manaca-website&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=marcelxv_manaca-website)
+
 ## Getting Started
 
 First, run the development server:
