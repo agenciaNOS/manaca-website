@@ -79,7 +79,7 @@ function Contact({ contactSection }) {
                             Telefone
                         </h2>
                         <p className="text-white">
-                            +55 11 99999-9999
+                            {contactSection.phone}
                         </p>
                     </div>
                 </div>

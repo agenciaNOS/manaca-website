@@ -98,30 +98,6 @@ export const copyData = {
           },
         ],
       },
-      {
-        title: 'Empreendimentos rurais',
-        description:
-          'A Manacá oferece serviços de consultoria ambiental para empreendimentos rurais, com foco em licenciamento ambiental, gestão de resíduos, gestão de águas, gestão de riscos ambientais e gestão de áreas contaminadas. Nossos serviços são personalizados para cada cliente, de acordo com as necessidades e características de cada empreendimento.',
-        services: [
-          {
-            id: 'regularizacao',
-            title: 'Intervenções e regularizações ambientais',
-            list: [
-              { id: 1, name: 'Documento Autorizativo para Intervenção Ambiental' },
-              { id: 2, name: 'Projeto de Intervenção e de Compensação' },
-              { id: 3, name: 'Projeto de Restituição de Flora – PTRF' },
-              { id: 4, name: 'Acompanhamento técnico de plantios de nativas' },
-              { id: 5, name: 'Assessoria e consultoria técnica' },
-              { id: 6, name: 'Projeto de Recuperação de Área Degradada – PRAD' },
-              { id: 7, name: 'Simples Declaração para Intervenção Ambiental' },
-              { id: 8, name: 'Cadastro Ambiental Rural' },
-              { id: 9, name: 'Outorga de Uso de Recursos Hídricos' },
-              { id: 10, name: 'Cadastro de Uso Insignificante' },
-              { id: 11, name: 'Cadastro de Uso isento de outorga' },
-            ],
-          },
-        ],
-      },
     ],
   },
   clientsSection: {
@@ -152,6 +128,7 @@ export const copyData = {
     whatsapp: 'WhatsApp',
     whatsappLink: 'https://api.whatsapp.com/send?phone=5535992266995',
     address: 'Endereço',
+    phone: '(35) 9 9226-6995',
     addressText:
       'Rua Silviano Brandão, nº 185 – Sala 1, Centro, Camanducaia/MG',
     instagram: 'Instagram',
