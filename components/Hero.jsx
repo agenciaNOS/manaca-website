@@ -23,7 +23,7 @@ function Hero({ heroSection }) {
               <FaEnvelope className="inline-flex " />
             </a>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="z-0 flex flex-col justify-center items-center">
             <p className="text-white my-8">Saiba mais sobre nós</p>
             <a href="#about" className="text-white border-2 border-white rounded-full p-2 hover:bg-manaca hover:border-manaca transition duration-500 ease-in-out animate-bounce">
               <svg

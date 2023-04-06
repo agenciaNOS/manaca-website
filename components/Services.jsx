@@ -14,7 +14,7 @@ const properIcon = (area) => {
 
 function Services({ servicesSection }) {
     return (
-        <>
+        <div>
             <div className="container mx-auto">
                 <p className="md:text-3xl text-xl font-bold mt-8">
                     {servicesSection.introText}
@@ -56,7 +56,7 @@ function Services({ servicesSection }) {
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 
