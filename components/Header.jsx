@@ -1,8 +1,8 @@
 import React from 'react'
-import { FaInstagram } from 'react-icons/fa';
 import DrawerMenu from './DrawerMenu';
 import Image from 'next/image'
 import useDevice from '../hooks/use-device';
+import InstagramCTA from './InstagramCTA';
 
 export default function Header() {
   const device = useDevice();
@@ -20,7 +20,7 @@ export default function Header() {
         />
       </a>
 
-      {isMobile() && <DrawerMenu />}
+      {isMobile() ? <DrawerMenu /> : <InstagramCTA />}
     </nav>
   )
 }

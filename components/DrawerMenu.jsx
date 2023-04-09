@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaWindowClose, FaBars } from 'react-icons/fa';
-import Link from 'next/link'
 import Image from 'next/image'
 
 export default function DrawerMenu() {
@@ -10,10 +9,16 @@ export default function DrawerMenu() {
     setHideDrawerMenu(!hideDrawerMenu);
   }
 
+  const externalLinkProps = { target: '_blank', rel: 'noopener nofollow noreferrer external' }
+  const instagramHref = 'https://www.instagram.com/manaca.consultoria';
+  const whatsAppHref = 'https://api.whatsapp.com/send?phone=5535992266995&text=Ola%2C%20Manaca!';
+
   const menuItems = [
-    { href: '/#', text: 'Home' },
-    { href: '/#about', text: 'Sobre nós' },
-    { href: '/#contact', text: 'Contato' }
+    { key: 'home', href: '/#', text: 'Home' },
+    { key: 'about', href: '/#about', text: 'Sobre nós' },
+    { key: 'contact', href: '/#contact', text: 'Contato' },
+    { key: 'instagram', href: instagramHref, text: 'Instagram', ...externalLinkProps },
+    { key: 'whats-app', href: whatsAppHref, text: 'WhatsApp', ...externalLinkProps }
   ];
 
   return (
@@ -43,19 +48,15 @@ export default function DrawerMenu() {
         />
 
         <div className="flex flex-col pl-4 pr-4 mt-6">
-          {menuItems.map(({ href, text }) => (
-            <Link
-              key={href}
-              href={href}
+          {menuItems.map(({ key, text, ...itemProps }) => (
+            <a
+              className="text-2xl mb-4"
+              key={key}
               onClick={handleToggleDrawerMenu}
+              {...itemProps}
             >
-              <a
-                className="text-2xl mb-4"
-                onClick={handleToggleDrawerMenu}
-              >
-                {text}
-              </a>
-            </Link>
+              {text}
+            </a>
           ))}
         </div>
       </div>
