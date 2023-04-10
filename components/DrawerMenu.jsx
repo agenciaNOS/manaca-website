@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { FaWindowClose, FaBars } from 'react-icons/fa';
+import externalLinkProps from '../utils/external-link-props';
 import Image from 'next/image'
+import { FaWindowClose, FaBars } from 'react-icons/fa';
 
 export default function DrawerMenu() {
   const [hideDrawerMenu, setHideDrawerMenu] = useState(true);
@@ -9,7 +10,6 @@ export default function DrawerMenu() {
     setHideDrawerMenu(!hideDrawerMenu);
   }
 
-  const externalLinkProps = { target: '_blank', rel: 'noopener nofollow noreferrer external' }
   const instagramHref = 'https://www.instagram.com/manaca.consultoria';
   const whatsAppHref = 'https://api.whatsapp.com/send?phone=5535992266995&text=Ola%2C%20Manaca!';
 
