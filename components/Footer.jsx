@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import externalLinkProps from '../utils/external-link-props';
 import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { logo } from '../content/logo';
 
 export default function Footer() {
   const developedByLink = (
@@ -14,8 +15,8 @@ export default function Footer() {
     <footer className="flex flex-col items-center p-4">
       <div className="flex justify-around w-[100%] items-center">
         <span className="max-w-[180px]">
-          <Image src="/manaca-logo.svg"
-            alt="Manacá"
+          <Image src={logo.src}
+            alt={logo.alt}
             width={180}
             height="100%"
             objectFit="cover"
