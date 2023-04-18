@@ -4,7 +4,7 @@ import DrawerMenu from './DrawerMenu';
 import IconCTA from './IconCTA';
 import Image from 'next/image'
 import useDevice from '../hooks/use-device';
-import { logo } from '../content/logo';
+import { logoWhite } from '../content/logo';
 
 export default function Header() {
   const device = useDevice();
@@ -26,8 +26,8 @@ export default function Header() {
   return (
     <nav className='flex items-center flex-wrap p-1 justify-between bg-manaca top-0 z-50'>
       <a className='inline-flex items-center'>
-        <Image src={logo.src}
-          alt={logo.alt}
+        <Image src={logoWhite.src}
+          alt={logoWhite.alt}
           width={180}
           height="100%"
           objectFit="cover"

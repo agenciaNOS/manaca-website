@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { FaWindowClose, FaBars } from 'react-icons/fa';
-import Image from 'next/image'
 import ctaItems from '../content/cta';
+import Image from 'next/image'
+import { FaWindowClose, FaBars } from 'react-icons/fa';
 
 export default function DrawerMenu() {
   const [hideDrawerMenu, setHideDrawerMenu] = useState(true);
