@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import externalLinkProps from '../utils/external-link-props';
 import Image from 'next/image'
-import { FaWindowClose, FaBars } from 'react-icons/fa';
+import ctaItems from '../content/cta';
 
 export default function DrawerMenu() {
   const [hideDrawerMenu, setHideDrawerMenu] = useState(true);
@@ -9,17 +8,6 @@ export default function DrawerMenu() {
   const handleToggleDrawerMenu = () => {
     setHideDrawerMenu(!hideDrawerMenu);
   }
-
-  const instagramHref = 'https://www.instagram.com/manaca.consultoria';
-  const whatsAppHref = 'https://api.whatsapp.com/send?phone=5535992266995&text=Ola%2C%20Manaca!';
-
-  const menuItems = [
-    { key: 'home', href: '/#', text: 'Home' },
-    { key: 'about', href: '/#about', text: 'Sobre nós' },
-    { key: 'contact', href: '/#contact', text: 'Contato' },
-    { key: 'instagram', href: instagramHref, text: 'Instagram', ...externalLinkProps },
-    { key: 'whats-app', href: whatsAppHref, text: 'WhatsApp', ...externalLinkProps }
-  ];
 
   return (
     <>
@@ -48,7 +36,7 @@ export default function DrawerMenu() {
         />
 
         <div className="flex flex-col pl-4 pr-4 mt-6">
-          {menuItems.map(({ key, text, ...itemProps }) => (
+          {ctaItems.map(({ key, text, ...itemProps }) => (
             <a
               className="text-2xl mb-4"
               key={key}
