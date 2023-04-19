@@ -7,7 +7,8 @@ import Services from '../components/Services';
 import Clients from '../components/Clients';
 import Contact from '../components/Contact';
 import { copyData } from '../content/copy';
-
+import Carousel from '../components/Carousel';
+import { formattedTestimonials, testimonials } from '../content/testimonials';
 
 const { heroSection, aboutSection, servicesSection, clientsSection, contactSection } = copyData
 
@@ -31,6 +32,13 @@ export default function Home() {
         <Services servicesSection={servicesSection} />
         <Clients clientsSection={clientsSection} />
         <Contact contactSection={contactSection} />
+        <Carousel>
+          {formattedTestimonials().map((testimonials) => (
+            JSON.stringify(testimonials)
+            <div className="flex flex-col md:flex-row justify-center items-center mb-8 mr-6 rounded p-4 sm:w-1/4 w-1/1 shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer">
+            </div>
+          ))}
+        </ Carousel>
       </main>
       <Footer />
     </>
