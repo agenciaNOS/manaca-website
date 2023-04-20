@@ -13,6 +13,7 @@ module.exports = {
       blue: colors.blue,
       red: colors.red,
       secondary: '#5b145c',
+      yellow: colors.yellow,
     },
     extend: {},
   },
