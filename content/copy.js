@@ -103,14 +103,14 @@ export const copyData = {
   clientsSection: {
     title: 'Clientes',
     clients: [
-      { name: 'Leggett & Platt do Brasil', image: 'leggett.png', id: 1 },
-      { name: 'MVF Lavadoras', image: 'mvf.png', id: 2 },
-      { name: 'Gases do Sul', image: 'gases.png', id: 3 },
-      { name: 'Romar Metais', image: 'romar.png', id: 4 },
-      { name: 'Sítio Teko Porã', image: 'teko.png', id: 5 },
-      { name: 'Condomínio Reserva Grinberg', image: 'grinberg.png', id: 6 },
-      { name: 'Loteamento Recanto Eucaliptal', image: 'recanto.png', id: 7 },
-      { name: 'Residencial Pitangueiras', image: 'pitangueiras.png', id: 8 },
+      { name: 'Leggett & Platt do Brasil', image: '/partners/leggett-platt.png', href: 'https://www.leggett.com.br/', width: 150, heigth: 50, id: 1 },
+      { name: 'MVF Lavadoras', image: '/partners/mvf.png', href: 'https://mvflavadoras.com.br/', width: 150, heigth: 150, id: 2 },
+      { name: 'Romar Metais', image: '/partners/romar-metais.png', href: 'https://romarmetais.com.br/', width: 150, heigth: 150, id: 3 },
+      // { name: 'Gases do Sul', image: 'gases.png', id: 4 },
+      // { name: 'Sítio Teko Porã', image: 'teko.png', id: 5 },
+      // { name: 'Condomínio Reserva Grinberg', image: 'grinberg.png', id: 6 },
+      // { name: 'Loteamento Recanto Eucaliptal', image: 'recanto.png', id: 7 },
+      // { name: 'Residencial Pitangueiras', image: 'pitangueiras.png', id: 8 },
     ],
   },
   contactSection: {
