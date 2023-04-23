@@ -4,7 +4,13 @@ import externalLinkProps from '../utils/external-link-props';
 import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { logoDefault } from '../content/logo';
 
+import useDevice from '../hooks/use-device';
+
 export default function Footer() {
+  const device = useDevice();
+
+  const isMobile = () => device === 'mobile';
+
   const developedByLink = (
     <>Desenvolvido por <a className="font-bold" href="https://agencianos.com.br">agência NÓS</a></>
   )
@@ -13,7 +19,7 @@ export default function Footer() {
 
   return (
     <footer className="flex flex-col items-center p-4">
-      <div className="flex justify-around w-[100%] items-center">
+      <div className="flex justify-around flex-col sm:flex-row w-[100%] items-center">
         <span className="max-w-[180px]">
           <Image src={logoDefault.src}
             alt={logoDefault.alt}
@@ -25,13 +31,13 @@ export default function Footer() {
           <p className="ml-8 text-sm">Manacá. 2022 - {currentYear}</p>
         </span>
 
-        <span className="flex">
+        <span className="flex mt-6 sm:mt-0">
           <a
             className="mr-6"
             href="https://ne-np.facebook.com/manaca.consultoriamg/"
             {...externalLinkProps}
           >
-            <FaFacebook className="text-blue-800" size={48} />
+            <FaFacebook className="text-blue-800" size={isMobile() ? 32 : 48} />
           </a>
 
           <a
@@ -39,15 +45,14 @@ export default function Footer() {
             href="https://br.linkedin.com/company/manac%C3%A1-consultoria-ambiental"
             {...externalLinkProps}
           >
-            <FaLinkedin className="text-blue-600" size={48} />
+            <FaLinkedin className="text-blue-600" size={isMobile() ? 32 : 48} />
           </a>
 
           <a
-            className="mr-6"
             href="https://www.instagram.com/manaca.consultoria"
             {...externalLinkProps}
           >
-            <FaInstagram className="text-red-400" size={48} />
+            <FaInstagram className="text-red-400" size={isMobile() ? 32 : 48} />
           </a>
         </span>
       </div>

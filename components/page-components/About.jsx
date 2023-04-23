@@ -21,9 +21,9 @@ function About({ aboutSection }) {
           {introText}
         </p>
       </div>
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-baseline my-10 w-100">
-          <div className="flex flex-col justify-center items-center mb-10 md:mr-10 f md:mb-0 w-72">
+      <div className="mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-evenly items-center md:items-baseline my-10">
+          <div className="flex flex-col md:flex-row justify-center items-center mb-10 md:mr-10 f md:mb-0 w-100">
             <Image
               src={partnerOne.image}
               alt={partnerOne.name}
@@ -31,17 +31,19 @@ function About({ aboutSection }) {
               height={200}
               className="rounded-full mb-5"
             />
-            <p className="text-center text-white mt-5">
-              {partnerOne.name}
-            </p>
-            <p className="text-center text-white mb-5">
-              {partnerOne.role}
-            </p>
-            <p className="text-center text-white text-sm">
-              {partnerOne.about}
-            </p>
+            <span className="ml-0 md:ml-2 w-72">
+              <p className="text-center md:text-left text-white mt-5">
+                {partnerOne.name}
+              </p>
+              <p className="text-center md:text-left text-white mb-5">
+                {partnerOne.role}
+              </p>
+              <p className="text-center md:text-left text-white text-sm">
+                {partnerOne.about}
+              </p>
+            </span>
           </div>
-          <div className="md:mr-10 flex flex-col justify-center items-center w-72">
+          <div className="flex flex-col md:flex-row justify-center items-center w-100">
             <Image
               src={partnerTwo.image}
               alt={partnerOne.name}
@@ -49,15 +51,17 @@ function About({ aboutSection }) {
               height={200}
               className="rounded-full mb-5"
             />
-            <p className="text-center text-white mt-5">
-                {partnerTwo.name}
-            </p>
-            <p className="text-center text-white mb-5">
-                {partnerTwo.role}
-            </p>
-            <p className="text-center text-white text-sm">
-                {partnerTwo.about}
-            </p>
+            <span className="ml-0 md:ml-2 w-72">
+              <p className="text-center md:text-left text-white mt-5">
+                  {partnerTwo.name}
+              </p>
+              <p className="text-center md:text-left text-white mb-5">
+                  {partnerTwo.role}
+              </p>
+              <p className="text-center md:text-left text-white text-sm">
+                  {partnerTwo.about}
+              </p>
+            </span>
           </div>
         </div>
       </div>

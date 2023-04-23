@@ -114,6 +114,8 @@ export const copyData = {
     ],
   },
   contactSection: {
+    email: 'manaca.camanducaia@gmail.com',
+    emailLink: 'mailto:manaca.camanducaia@gmail.com',
     title: 'Contato',
     description:
       'Tem dúvidas ou precisa de um orçamento? Preencha o formulário abaixo',
@@ -126,11 +128,14 @@ export const copyData = {
     },
     notFound: 'Não encontrou o que procurava? Consulte-nos!',
     whatsapp: 'WhatsApp',
-    whatsappLink: 'https://api.whatsapp.com/send?phone=5535992266995',
+    whatsappLink: 'https://api.whatsapp.com/send?phone=5535992266995&text=Ola%2C%20Manaca!',
     address: 'Endereço',
     phone: '(35) 9 9226-6995',
+    phoneCallLink: 'tel:5535992266995',
     addressText:
       'Rua Silviano Brandão, nº 185 – Sala 1, Centro, Camanducaia/MG',
+    addressLink:
+      'https://www.google.com/maps/dir//manaca+consultoria+ambiental/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x94cc01f9dd3aa21b:0xbbc53a8debf08084?sa=X&ved=2ahUKEwjY7vyPqMD-AhXjrJUCHam0DWkQ9Rd6BAhSEAU',
     instagram: 'Instagram',
     instagramLink: 'https://www.instagram.com/manaca.consultoria/',
     facebook: 'Facebook',
