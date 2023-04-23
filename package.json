@@ -23,11 +23,13 @@
     "fs": "^0.0.1-security",
     "jest": "^29.4.3",
     "jest-environment-jsdom": "^29.4.3",
+    "moment": "^2.29.4",
     "next": "^12.1.7-canary.24",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.3.1",
-    "react-toastify": "^9.1.1"
+    "react-toastify": "^9.1.1",
+    "swiper": "^9.2.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",

@@ -1,19 +1,20 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Services from '../components/Services';
-import Clients from '../components/Clients';
-import Contact from '../components/Contact';
+import {
+  Hero,
+  About,
+  Services,
+  Clients,
+  Contact,
+  Testimonials,
+} from '../components/page-components';
 import { copyData } from '../content/copy';
-
 
 const { heroSection, aboutSection, servicesSection, clientsSection, contactSection } = copyData
 
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -30,6 +31,7 @@ export default function Home() {
         <About aboutSection={aboutSection} />
         <Services servicesSection={servicesSection} />
         <Clients clientsSection={clientsSection} />
+        <Testimonials />
         <Contact contactSection={contactSection} />
       </main>
       <Footer />
