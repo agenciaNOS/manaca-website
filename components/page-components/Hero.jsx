@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Hero({ heroSection }) {
-  const { title } = heroSection
+  const { title, CTA } = heroSection
   return (
     // create a new layer to overlay
     <div className="background text-white flex flex-col justify-center items-center">
@@ -9,6 +9,10 @@ function Hero({ heroSection }) {
           <h1 className="md:text-6xl text-5xl text-center font-bold my-2 md:my-5 text-white">
             {title}
           </h1>
+
+          <p className="md:text-xl text-2xl text-center text-white">
+            {CTA}
+          </p>
 
           <div className="z-0 flex flex-col justify-center items-center">
             <p className="text-white my-8">Saiba mais sobre nós</p>
