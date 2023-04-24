@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ctaItems from '../content/cta';
+import { ctaItems } from '../content/cta';
 import Image from 'next/image'
 import { FaWindowClose, FaBars } from 'react-icons/fa';
 

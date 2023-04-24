@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,15 +8,24 @@ import 'swiper/css/navigation';
 
 import { Autoplay, Navigation, Pagination } from 'swiper';
 
+import useDevice from '../../hooks/use-device';
+
 export default function Carousel({ children }) {
+  const device = useDevice();
+
+  const isDesktop = () => device === 'desktop';
+
   const CarouselItems = children.map((ChildComponent, index) => (
     <SwiperSlide
       key={index}
       style={{
+        alignContent: 'center',
         alignItems: 'center',
+        alignSelf: 'center',
         display: 'flex',
         justifyContent: 'center',
-        padding: '2em',
+        padding: '32px',
+        height: '100%',
         width: '100%',
       }}
     >
@@ -29,11 +38,11 @@ export default function Carousel({ children }) {
       style={{
         '--swiper-navigation-color': '#34824E',
         '--swiper-pagination-color': '#34824E',
-        width: '100%',
+        '--swiper-navigation-size': !isDesktop() ? '16px' : '32px',
       }}
       loop={true}
       autoplay={{
-        delay: 5000,
+        delay: 35000,
         disableOnInteraction: false,
       }}
       pagination={{

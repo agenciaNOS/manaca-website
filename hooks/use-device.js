@@ -4,15 +4,16 @@ export default function useDevice() {
   const [device, setDevice] = useState('desktop');
 
   const maxWidthForMobile = 768;
+  const maxWidthForTablet = 1024;
 
   function handleWindowSizeChange() {
     if (maxWidthForMobile >= window.innerWidth) {
       setDevice('mobile');
-
-      return;
+    } else if (maxWidthForTablet >= window.innerWidth) {
+      setDevice('tablet');
+    } else {
+      setDevice('desktop');
     }
-
-    setDevice('desktop');
   }
 
   useEffect(() => {

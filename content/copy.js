@@ -103,17 +103,19 @@ export const copyData = {
   clientsSection: {
     title: 'Clientes',
     clients: [
-      { name: 'Leggett & Platt do Brasil', image: 'leggett.png', id: 1 },
-      { name: 'MVF Lavadoras', image: 'mvf.png', id: 2 },
-      { name: 'Gases do Sul', image: 'gases.png', id: 3 },
-      { name: 'Romar Metais', image: 'romar.png', id: 4 },
-      { name: 'Sítio Teko Porã', image: 'teko.png', id: 5 },
-      { name: 'Condomínio Reserva Grinberg', image: 'grinberg.png', id: 6 },
-      { name: 'Loteamento Recanto Eucaliptal', image: 'recanto.png', id: 7 },
-      { name: 'Residencial Pitangueiras', image: 'pitangueiras.png', id: 8 },
+      { name: 'Leggett & Platt do Brasil', image: '/partners/leggett.jpg', href: 'https://www.leggett.com.br/', width: 200, heigth: 50, id: 1 },
+      { name: 'MVF Lavadoras', image: '/partners/mvf.png', href: 'https://mvflavadoras.com.br/', width: 200, heigth: 200, id: 2 },
+      { name: 'Romar Metais', image: '/partners/romar-metais.png', href: 'https://romarmetais.com.br/', width: 200, heigth: 200, id: 3 },
+      { name: 'Monte Verde', image: '/partners/mv.jpeg', id: 4 },
+      { name: 'Solourbe', image: '/partners/solourbe.png', href: 'https://www.solourbe.com.br/', width: 200, heigth: 200, id: 5 },
+      // { name: 'Condomínio Reserva Grinberg', image: 'grinberg.png', id: 6 },
+      // { name: 'Loteamento Recanto Eucaliptal', image: 'recanto.png', id: 7 },
+      // { name: 'Residencial Pitangueiras', image: 'pitangueiras.png', id: 8 },
     ],
   },
   contactSection: {
+    email: 'manaca.camanducaia@gmail.com',
+    emailLink: 'mailto:manaca.camanducaia@gmail.com',
     title: 'Contato',
     description:
       'Tem dúvidas ou precisa de um orçamento? Preencha o formulário abaixo',
@@ -126,11 +128,14 @@ export const copyData = {
     },
     notFound: 'Não encontrou o que procurava? Consulte-nos!',
     whatsapp: 'WhatsApp',
-    whatsappLink: 'https://api.whatsapp.com/send?phone=5535992266995',
+    whatsappLink: 'https://api.whatsapp.com/send?phone=5535992266995&text=Ola%2C%20Manaca!',
     address: 'Endereço',
     phone: '(35) 9 9226-6995',
+    phoneCallLink: 'tel:5535992266995',
     addressText:
       'Rua Silviano Brandão, nº 185 – Sala 1, Centro, Camanducaia/MG',
+    addressLink:
+      'https://www.google.com/maps/dir//manaca+consultoria+ambiental/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x94cc01f9dd3aa21b:0xbbc53a8debf08084?sa=X&ved=2ahUKEwjY7vyPqMD-AhXjrJUCHam0DWkQ9Rd6BAhSEAU',
     instagram: 'Instagram',
     instagramLink: 'https://www.instagram.com/manaca.consultoria/',
     facebook: 'Facebook',

@@ -1,5 +1,5 @@
 import React from 'react'
-import ctaItems from '../content/cta';
+import { ctaItems } from '../content/cta';
 import DrawerMenu from './DrawerMenu';
 import IconCTA from './IconCTA';
 import Image from 'next/image'
