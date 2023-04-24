@@ -5,10 +5,10 @@ function About({ aboutSection }) {
   const { introText, partnerOne, partnerTwo } = aboutSection;
 
   return (
-    <div className="bg-secondary bg-cover bg-center py-20" id="about">
+    <div className="bg-gray bg-cover bg-center py-20" id="about">
       <p className="text-center">
         <Image
-          src="/manaca-logo-white.svg"
+          src="/manaca-logo.svg"
           alt="Manacá"
           width={400}
           height={200}
@@ -17,7 +17,7 @@ function About({ aboutSection }) {
         />
       </p>
       <div className="container px-4">
-        <p className="md:text-2xl text-xl text-center text-white font-bold py-10">
+        <p className="md:text-2xl text-xl text-center text-secondary font-bold py-10">
           {introText}
         </p>
       </div>
@@ -32,13 +32,13 @@ function About({ aboutSection }) {
               className="rounded-full mb-5"
             />
             <span className="ml-0 md:ml-2 w-72">
-              <p className="text-center md:text-left text-white mt-5">
+              <p className="text-center md:text-left text-secondary mt-5">
                 {partnerOne.name}
               </p>
-              <p className="text-center md:text-left text-white mb-5">
+              <p className="text-center md:text-left text-secondary mb-5">
                 {partnerOne.role}
               </p>
-              <p className="text-center md:text-left text-white text-sm">
+              <p className="text-center md:text-left text-secondary text-sm">
                 {partnerOne.about}
               </p>
             </span>
@@ -52,13 +52,13 @@ function About({ aboutSection }) {
               className="rounded-full mb-5"
             />
             <span className="ml-0 md:ml-2 w-72">
-              <p className="text-center md:text-left text-white mt-5">
+              <p className="text-center md:text-left text-secondary mt-5">
                   {partnerTwo.name}
               </p>
-              <p className="text-center md:text-left text-white mb-5">
+              <p className="text-center md:text-left text-secondary mb-5">
                   {partnerTwo.role}
               </p>
-              <p className="text-center md:text-left text-white text-sm">
+              <p className="text-center md:text-left text-secondary text-sm">
                   {partnerTwo.about}
               </p>
             </span>

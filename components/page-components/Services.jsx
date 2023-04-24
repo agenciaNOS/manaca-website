@@ -14,9 +14,9 @@ const properIcon = (area) => {
 
 function Services({ servicesSection }) {
 	return (
-		<div className="flex flex-col items-center">
+		<div className="flex flex-col items-center bg-secondary py-16">
 			<div className="container mx-auto">
-				<p className="md:text-3xl text-xl font-bold mt-8">
+				<p className="md:text-3xl text-xl font-bold mt-8 text-white text-center">
 					{servicesSection.introText}
 				</p>
 			</div>
@@ -24,10 +24,10 @@ function Services({ servicesSection }) {
 				{servicesSection.areas.map((area) => (
 					<div key={area.id} className="w-[80%] md:w-[40%] flex flex-col justify-arround items-center">
 						<span className="flex flex-col items-center">
-							<div className="m-4 p-5 bg-secondary rounded-full mx-2">
+							<div className="m-4 p-5 bg-darkestpurple rounded-full mx-2">
 								{properIcon(area)}
 							</div>
-							<h1>
+							<h1 className="text-2xl font-bold text-white">
 								{area.title}
 							</h1>
 						</span>
@@ -35,14 +35,14 @@ function Services({ servicesSection }) {
 							{area.services.map((service) => (
 								<div
 									key={service.id}
-									className="p-6 mb-2 rounded shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+									className="p-6 mb-2 rounded shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer bg-darkestpurple hover:bg-purple"
 								>
-									<h2>
+									<h2 className="text-xl font-bold text-white">
 										{service.title}
 									</h2>
 									<ul className="list-disc">
 										{service.list.map((item) => (
-											<li key={item.id}>
+											<li key={item.id} className="text-white">
 												{item.name}
 											</li>
 										))}

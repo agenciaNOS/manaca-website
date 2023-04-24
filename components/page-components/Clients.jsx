@@ -3,8 +3,8 @@ import { externalLinkProps } from '../../content/cta'
 
 function Clients({ clientsSection }) {
 	return (
-		<div className="container bg-secondary mx-auto min-w-[100%]">
-			<h1 className="text-center text-4xl font-bold text-white my-10">
+		<div className="bg-white mx-auto min-w-[100%] height-96 py-32">
+			<h1 className="text-center text-4xl font-bold text-secondary my-10">
 				{clientsSection.title}
 			</h1>
 

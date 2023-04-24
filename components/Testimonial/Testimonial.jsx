@@ -10,7 +10,7 @@ export default function Testimonial({ description, name, pictureUrl, plusDescrip
 
   return (
     <div
-      className="my-6 lg:p-6 rounded md:min-w-[100%] md:max-w-[100%] lg:min-w-[50%] lg:max-w-[50%] shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer"
+      className="my-6 lg:p-6 rounded md:min-w-[100%] md:max-w-[100%] lg:min-w-[50%] lg:max-w-[50%] shadow-xl hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer bg-white"
       style={ !isDesktop() ? { padding: '12px' } : {} }
     >
       <div className='flex flex-wrap items-center justify-between mb-4 gap-2'>
