@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 function Hero({ heroSection }) {
   const { title, CTA } = heroSection
@@ -12,18 +11,10 @@ function Hero({ heroSection }) {
           </h1>
 
           <p className="md:text-xl text-2xl text-center text-white">
-           {CTA}
+            {CTA}
           </p>
 
-          <div className="flex flex-row md:flex-row justify-center items-center my-5">
-            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5535992266995&text=Ola%2C%20Manaca!" className='card bg-manaca flex items-center'>
-              <FaWhatsapp className="inline-flex" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="mailto:manaca.camanducaia@gmail.com" className='card bg-manaca flex items-center'>
-              <FaEnvelope className="inline-flex " />
-            </a>
-          </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="z-0 flex flex-col justify-center items-center">
             <p className="text-white my-8">Saiba mais sobre nós</p>
             <a href="#about" className="text-white border-2 border-white rounded-full p-2 hover:bg-manaca hover:border-manaca transition duration-500 ease-in-out animate-bounce">
               <svg
