@@ -178,7 +178,11 @@ function Contact({ contactSection }) {
             <FaEnvelope className="text-3xl text-secondary" />
           </a>
           <h2 className="text-xl font-bold text-white">E-mail</h2>
-          <p className="text-white text-center">{contactSection.email}</p>
+          {contactSection.emails.map((email) => (
+            <p className="text-white text-center" key={email}>
+              {email}
+            </p>
+          ))}
         </div>
       </div>
     </div>

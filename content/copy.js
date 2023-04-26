@@ -35,10 +35,17 @@ export const copyData = {
             title: 'Planejamento e Licenciamento Ambiental',
             list: [
               { id: 1, name: 'Estudo de Viabilidade Ambiental (EVA)' },
-              { id: 2, name: 'Licença prévia (LP), de instalação (LI) e de operação (LO)' },
+              {
+                id: 2,
+                name:
+                  'Licença prévia (LP), de instalação (LI) e de operação (LO)',
+              },
               { id: 3, name: 'Licença Ambiental Simplificada (LAS)' },
               { id: 4, name: 'Relatório Ambiental Simplificado (RAS)' },
-              { id: 5, name: 'Plano de Controle Ambiental (PCA)e relatório (RCA)' },
+              {
+                id: 5,
+                name: 'Plano de Controle Ambiental (PCA)e relatório (RCA)',
+              },
               { id: 6, name: 'Dispensa e renovação de Licença Ambiental' },
               { id: 7, name: 'Estudo de Critérios Locacionais' },
               { id: 8, name: 'Plantas Ambientais' },
@@ -48,22 +55,61 @@ export const copyData = {
           {
             title: 'Documentações – IBAMA',
             list: [
-              { id: 1, name: 'Cadastro Técnico Federal de Atividades Potencialmente Poluidoras (CTF-APP)' },
-              { id: 2, name: 'Cadastro Técnico Federal de Atividades e Instrumentos de Defesa Ambiental (CTF-AIDA)' },
-              { id: 3, name: 'Relatório Anual de Atividades Potencialmente Poluidoras (RAPP)' },
-              { id: 4, name: 'Emissão de Taxas de Controle e Fiscalização Ambiental (TCFA)' },
-              { id: 5, name: 'Licença para transporte de produtos perigosos e outros' },
+              {
+                id: 1,
+                name:
+                  'Cadastro Técnico Federal de Atividades Potencialmente Poluidoras (CTF-APP)',
+              },
+              {
+                id: 2,
+                name:
+                  'Cadastro Técnico Federal de Atividades e Instrumentos de Defesa Ambiental (CTF-AIDA)',
+              },
+              {
+                id: 3,
+                name:
+                  'Relatório Anual de Atividades Potencialmente Poluidoras (RAPP)',
+              },
+              {
+                id: 4,
+                name:
+                  'Emissão de Taxas de Controle e Fiscalização Ambiental (TCFA)',
+              },
+              {
+                id: 5,
+                name: 'Licença para transporte de produtos perigosos e outros',
+              },
             ],
           },
           {
             title: 'Controle Ambiental e gestão de condicionantes',
             list: [
-              { id: 1, name: 'Declaração anual de uso de recursos hídricos (DAURH)' },
-              { id: 2, name: 'Declaração anual de Carga Poluidora (DCP) – IGAM' },
-              { id: 3, name: 'Gestão de Resíduos Sólidos (Manifesto de Transporte de Resíduos – MTR e SINIR, Declaração de Movimentação de Resíduos – DMR)' },
-              { id: 4, name: 'Plano de Gerenciamento de Resíduos Sólidos – PGRS' },
-              { id: 5, name: 'Assessoria técnica e consultoria em questões ambientais' },
-              { id: 6, name: 'Programas de Educação Ambiental, palestras, treinamentos e oficinas e outros.' },
+              {
+                id: 1,
+                name: 'Declaração anual de uso de recursos hídricos (DAURH)',
+              },
+              {
+                id: 2,
+                name: 'Declaração anual de Carga Poluidora (DCP) – IGAM',
+              },
+              {
+                id: 3,
+                name:
+                  'Gestão de Resíduos Sólidos (Manifesto de Transporte de Resíduos – MTR e SINIR, Declaração de Movimentação de Resíduos – DMR)',
+              },
+              {
+                id: 4,
+                name: 'Plano de Gerenciamento de Resíduos Sólidos – PGRS',
+              },
+              {
+                id: 5,
+                name: 'Assessoria técnica e consultoria em questões ambientais',
+              },
+              {
+                id: 6,
+                name:
+                  'Programas de Educação Ambiental, palestras, treinamentos e oficinas e outros.',
+              },
             ],
           },
         ],
@@ -77,9 +123,15 @@ export const copyData = {
           {
             title: 'Intervenções e regularizações ambientais',
             list: [
-              { id: 1, name: 'Documento Autorizativo para Intervenção Ambiental' },
+              {
+                id: 1,
+                name: 'Documento Autorizativo para Intervenção Ambiental',
+              },
               { id: 2, name: 'Projeto de Intervenção e de Compensação' },
-              { id: 3, name: 'Estudo Técnico para regularização em APPs urbanas' },
+              {
+                id: 3,
+                name: 'Estudo Técnico para regularização em APPs urbanas',
+              },
               { id: 4, name: 'Laudo de Fauna Silvestre Terrestre' },
               { id: 5, name: 'Projeto de Restituição de Flora – PTRF' },
               { id: 6, name: 'Relatório de Regularização Ambiental' },
@@ -93,7 +145,11 @@ export const copyData = {
               { id: 2, name: 'Projeto de Arborização Urbana' },
               { id: 3, name: 'Acompanhamento de execução de plantios' },
               { id: 4, name: 'Assessoria técnica e consultoria ambiental' },
-              { id: 5, name: 'Plano de Gerenciamento de Resíduos da Construção Civil – PGRCC' },
+              {
+                id: 5,
+                name:
+                  'Plano de Gerenciamento de Resíduos da Construção Civil – PGRCC',
+              },
             ],
           },
         ],
@@ -103,19 +159,50 @@ export const copyData = {
   clientsSection: {
     title: 'Clientes',
     clients: [
-      { name: 'Leggett & Platt do Brasil', image: '/partners/leggett.jpg', href: 'https://www.leggett.com.br/', width: 200, heigth: 50, id: 1 },
-      { name: 'MVF Lavadoras', image: '/partners/mvf.png', href: 'https://mvflavadoras.com.br/', width: 200, heigth: 200, id: 2 },
-      { name: 'Romar Metais', image: '/partners/romar-metais.png', href: 'https://romarmetais.com.br/', width: 200, heigth: 200, id: 3 },
+      {
+        name: 'Leggett & Platt do Brasil',
+        image: '/partners/leggett.jpg',
+        href: 'https://www.leggett.com.br/',
+        width: 200,
+        heigth: 50,
+        id: 1,
+      },
+      {
+        name: 'MVF Lavadoras',
+        image: '/partners/mvf.png',
+        href: 'https://mvflavadoras.com.br/',
+        width: 200,
+        heigth: 200,
+        id: 2,
+      },
+      {
+        name: 'Romar Metais',
+        image: '/partners/romar-metais.png',
+        href: 'https://romarmetais.com.br/',
+        width: 200,
+        heigth: 200,
+        id: 3,
+      },
       { name: 'Monte Verde', image: '/partners/mv.jpeg', id: 4 },
-      { name: 'Solourbe', image: '/partners/solourbe.png', href: 'https://www.solourbe.com.br/', width: 200, heigth: 200, id: 5 },
+      {
+        name: 'Solourbe',
+        image: '/partners/solourbe.png',
+        href: 'https://www.solourbe.com.br/',
+        width: 200,
+        heigth: 200,
+        id: 5,
+      },
       // { name: 'Condomínio Reserva Grinberg', image: 'grinberg.png', id: 6 },
       // { name: 'Loteamento Recanto Eucaliptal', image: 'recanto.png', id: 7 },
       // { name: 'Residencial Pitangueiras', image: 'pitangueiras.png', id: 8 },
     ],
   },
   contactSection: {
-    email: 'manaca.camanducaia@gmail.com',
-    emailLink: 'mailto:manaca.camanducaia@gmail.com',
+    emails: [
+      'thais@manacaconsultoria.com.br',
+      'giovanna@manacaconsultoria.com.br',
+    ],
+    emailLink: 'mailto:thais@manacaconsultoria.com.br',
     title: 'Contato',
     description:
       'Tem dúvidas ou precisa de um orçamento? Preencha o formulário abaixo',
@@ -128,7 +215,8 @@ export const copyData = {
     },
     notFound: 'Não encontrou o que procurava? Consulte-nos!',
     whatsapp: 'WhatsApp',
-    whatsappLink: 'https://api.whatsapp.com/send?phone=5535992266995&text=Ola%2C%20Manaca!',
+    whatsappLink:
+      'https://api.whatsapp.com/send?phone=5535992266995&text=Ola%2C%20Manaca!',
     address: 'Endereço',
     phone: '(35) 9 9226-6995',
     phoneCallLink: 'tel:5535992266995',
