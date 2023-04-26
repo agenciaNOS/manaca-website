@@ -14,7 +14,7 @@ const properIcon = (area) => {
 
 function Services({ servicesSection }) {
 	return (
-		<div className="flex flex-col items-center bg-secondary py-16">
+		<div className="flex flex-col items-center bg-secondary py-16" id="services">
 			<div className="container mx-auto">
 				<p className="md:text-3xl text-xl font-bold mt-8 text-white text-center">
 					{servicesSection.introText}

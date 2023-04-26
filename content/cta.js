@@ -12,6 +12,7 @@ const whatsAppHref = `https://api.whatsapp.com/send?phone=${whatsAppUser}&text=$
 export const ctaItems = [
   { key: 'home', href: '/#', text: 'Home' },
   { key: 'about', href: '/#about', text: 'Sobre nós' },
+  { key: 'services', href: '/#services', text: 'Serviços' },
   { key: 'contact', href: '/#contact', text: 'Contato' },
   { key: 'instagram', href: instagramHref, text: 'Instagram', ...externalLinkProps },
   { key: 'whats-app', href: whatsAppHref, text: 'WhatsApp', ...externalLinkProps }
