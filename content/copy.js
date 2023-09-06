@@ -192,16 +192,10 @@ export const copyData = {
         heigth: 200,
         id: 5,
       },
-      // { name: 'Condomínio Reserva Grinberg', image: 'grinberg.png', id: 6 },
-      // { name: 'Loteamento Recanto Eucaliptal', image: 'recanto.png', id: 7 },
-      // { name: 'Residencial Pitangueiras', image: 'pitangueiras.png', id: 8 },
     ],
   },
   contactSection: {
-    emails: [
-      'thais@manacaconsultoria.com.br',
-      'giovanna@manacaconsultoria.com.br',
-    ],
+    emails: ['comercial@manacaconsultoria.com.br'],
     emailLink: 'mailto:thais@manacaconsultoria.com.br',
     title: 'Contato',
     description:

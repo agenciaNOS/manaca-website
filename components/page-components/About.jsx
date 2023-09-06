@@ -27,12 +27,12 @@ function About({ aboutSection }) {
             <Image
               src={partnerOne.image}
               alt={partnerOne.name}
-              width={200}
-              height={200}
-              className="rounded-full mb-5"
+              width={350}
+              height={350}
+              className="rounded-full mb-5 md:mb-0 transform hover:rotate-6 transition duration-500 ease-in-out"
             />
-            <span className="ml-0 md:ml-2 w-72">
-              <p className="text-center md:text-left text-secondary mt-5">
+            <span className="ml-6 w-72">
+              <p className="text-center md:text-left text-secondary font-bold text-2xl mb-5">
                 {partnerOne.name}
               </p>
               <p className="text-center md:text-left text-secondary mb-5">
@@ -40,26 +40,6 @@ function About({ aboutSection }) {
               </p>
               <p className="text-center md:text-left text-secondary text-sm">
                 {partnerOne.about}
-              </p>
-            </span>
-          </div>
-          <div className="flex flex-col md:flex-row justify-center items-center w-100">
-            <Image
-              src={partnerTwo.image}
-              alt={partnerOne.name}
-              width={200}
-              height={200}
-              className="rounded-full mb-5"
-            />
-            <span className="ml-0 md:ml-2 w-72">
-              <p className="text-center md:text-left text-secondary mt-5">
-                  {partnerTwo.name}
-              </p>
-              <p className="text-center md:text-left text-secondary mb-5">
-                  {partnerTwo.role}
-              </p>
-              <p className="text-center md:text-left text-secondary text-sm">
-                  {partnerTwo.about}
               </p>
             </span>
           </div>
