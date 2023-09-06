@@ -11,18 +11,27 @@ import {
 } from '../components/page-components';
 import { copyData } from '../content/copy';
 
-const { heroSection, aboutSection, servicesSection, clientsSection, contactSection } = copyData
-
+const {
+  heroSection,
+  aboutSection,
+  servicesSection,
+  clientsSection,
+  contactSection,
+} = copyData;
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Manacá – Consultoria Ambiental</title>
-        <meta name="description" content="feito por agência NÓS usando next app" />
+        <meta
+          name="description"
+          content="Soluções ambientais para o seu negócio - Camanducaia e região"
+        />
         <link rel="icon" href="/favicon.ico" />
         <style>
-          @import url(&quot;https://fonts.googleapis.com/css2?family=Dosis&display=swap&quot;);
+          @import
+          url(&quot;https://fonts.googleapis.com/css2?family=Dosis&display=swap&quot;);
         </style>
       </Head>
       <main>
@@ -36,5 +45,5 @@ export default function Home() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
