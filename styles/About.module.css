@@ -1,0 +1,191 @@
+.aboutSection {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.aboutImage {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover img {
+  transform: scale(1.05);
+}
+
+.experienceBadge {
+  position: absolute;
+  bottom: 30px;
+  right: -20px;
+  background-color: #2e7d32;
+  color: white;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.years {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.text {
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 80px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.aboutDescription {
+  margin-bottom: 30px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.aboutFeatures {
+  margin-bottom: 40px;
+}
+
+.featureItem {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.featureIcon {
+  color: #2e7d32;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.featureContent h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.featureContent p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.aboutCta {
+  display: flex;
+  gap: 20px;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryButton {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.primaryButton:hover {
+  background-color: #1b5e20;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #2e7d32;
+  border: 2px solid #2e7d32;
+}
+
+.secondaryButton:hover {
+  background-color: rgba(46, 125, 50, 0.1);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .aboutContent {
+    grid-template-columns: 1fr;
+  }
+  
+  .aboutImage {
+    order: 2;
+  }
+  
+  .aboutInfo {
+    order: 1;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutCta {
+    flex-direction: column;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    text-align: center;
+  }
+  
+  .experienceBadge {
+    width: 100px;
+    height: 100px;
+    right: -10px;
+  }
+  
+  .years {
+    font-size: 2rem;
+  }
+}

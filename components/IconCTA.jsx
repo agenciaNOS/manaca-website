@@ -29,7 +29,7 @@ export default function IconCTA({ socialMedia = null, text, ...rest}) {
 
   const defaultCTA = (
     <a
-      className="inline-flex items-center px-3 py-1 mr-4 text-white"
+      className="inline-flex items-center px-3 py-1 mr-4"
       {...rest}
     >
       {text}

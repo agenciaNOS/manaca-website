@@ -4,7 +4,7 @@ import DrawerMenu from './DrawerMenu';
 import IconCTA from './IconCTA';
 import Image from 'next/image'
 import useDevice from '../hooks/use-device';
-import { logoWhite } from '../content/logo';
+import { logoColorful } from '../content/logo';
 
 export default function Header() {
   const device = useDevice();
@@ -12,7 +12,7 @@ export default function Header() {
   const isMobile = () => device === 'mobile';
 
   const DesktopCTA = (
-    <div className="flex">
+    <div className="flex items-center space-x-4 text-primary">
       {ctaItems.map(({ key, ...itemProps }) => (
         <IconCTA
           key={key}
@@ -24,17 +24,21 @@ export default function Header() {
   )
 
   return (
-    <nav className='flex items-center flex-wrap p-1 justify-between bg-manaca top-0 z-50'>
-      <a className='inline-flex items-center'>
-        <Image src={logoWhite.src}
-          alt={logoWhite.alt}
-          width={180}
-          height="100%"
-          objectFit="cover"
+    <header className='fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-100'>
+      <nav className='flex items-center justify-between max-w-7xl mx-auto px-4 py-2 sm:px-6 lg:px-8'>
+        <Image
+          priority
+          src={logoColorful.src}
+          alt={logoColorful.alt}
+          width={80}
+          height={80}
+          className="object-contain rounded-md"
         />
-      </a>
 
-      {isMobile() ? <DrawerMenu /> : DesktopCTA}
-    </nav>
+        <div className='flex items-center'>
+          {isMobile() ? <DrawerMenu /> : DesktopCTA}
+        </div>
+      </nav>
+    </header>
   )
 }

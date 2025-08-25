@@ -12,42 +12,67 @@ export default function DrawerMenu() {
 
   return (
     <>
-      {!hideDrawerMenu ? (
-        <FaWindowClose
-          className="flex text-3xl text-white items-center cursor-pointer left-10 top-6 mr-6 z-50"
+      {/* Overlay */}
+      {!hideDrawerMenu && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-30 backdrop-blur-sm"
           onClick={handleToggleDrawerMenu}
-        />
-      ) : (
-        <FaBars
-          onClick={handleToggleDrawerMenu}
-          className="text-3xl text-white z-30 flex items-center cursor-pointer left-10 top-6 mr-6"
         />
       )}
 
+      <div className="relative z-50 flex items-center justify-center">
+        {!hideDrawerMenu ? (
+          <FaWindowClose
+            className="mobile-menu-icon text-2xl text-primary hover:text-darkestgreen transition-all duration-200 cursor-pointer p-2 rounded-lg touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center"
+            onClick={handleToggleDrawerMenu}
+            aria-label="Fechar menu"
+            role="button"
+            tabIndex={0}
+          />
+        ) : (
+          <FaBars
+            onClick={handleToggleDrawerMenu}
+            className="mobile-menu-icon text-2xl text-primary hover:text-darkestgreen transition-all duration-200 cursor-pointer p-2 rounded-lg touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center"
+            aria-label="Abrir menu"
+            role="button"
+            tabIndex={0}
+          />
+        )}
+      </div>
+
       <div
-        className={`top-0 left-0 w-[75vw] bg-manaca p-6 text-white fixed h-full z-40 shadow-2xl ease-in-out duration-300 ${
-          hideDrawerMenu ? "translate-x-[-75vw]" : "translate-x-0"
+        className={`top-0 left-0 w-[90vw] max-w-xs bg-white shadow-2xl p-0 fixed h-full z-40 transform transition-transform duration-300 ease-out ${
+          hideDrawerMenu ? "translate-x-[-100%]" : "translate-x-0"
         }`}
       >
-        <Image src="/manaca-logo-white.svg"
-          alt="Manacá"
-          width={180}
-          height="100%"
-          objectFit="cover"
-        />
+        {/* Header */}
+        <div className="bg-primary p-4 border-b border-primary/20 flex items-center justify-center">
+          <Image src="/manaca-logo-white.svg"
+            alt="Manacá"
+            width={120}
+            height={38}
+            style={{ objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+            className="drop-shadow-lg"
+            priority
+          />
+        </div>
 
-        <div className="flex flex-col pl-4 pr-4 mt-6">
-          {ctaItems.map(({ key, text, ...itemProps }) => (
+        {/* Navigation */}
+        <nav className="flex flex-col p-3 space-y-1 bg-white">
+          {ctaItems.map(({ key, text, ...itemProps }, index) => (
             <a
-              className="text-2xl mb-4"
+              className={`text-base py-3 px-4 rounded-lg text-gray-800 hover:bg-primary/10 active:bg-primary/20 transition-all duration-200 border border-transparent hover:border-primary/20 touch-manipulation transform hover:translate-x-1 font-medium ${
+                index === 0 ? 'mt-1' : ''
+              }`}
               key={key}
               onClick={handleToggleDrawerMenu}
+              style={{ animationDelay: `${index * 50}ms` }}
               {...itemProps}
             >
-              {text}
+              <span className="font-medium">{text}</span>
             </a>
           ))}
-        </div>
+        </nav>
       </div>
     </>
   )
