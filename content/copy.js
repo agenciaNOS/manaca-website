@@ -5,13 +5,15 @@ export const copyData = {
   },
   aboutSection: {
     introText:
-      'A Manacá uma empresa de consultoria que, desde 2017, promove soluções ambientais aos seus clientes, oferecendo apoio em todas as etapas, do projeto à execução, seja direta ou indiretamente por meio dos parceiros (topografia, engenharia e outros). Atuamos na região do extremo sul de Minas Gerais, principalmente nas cidades de Extrema, Toledo, Itapeva, Camanducaia, Monte Verde, Cambuí, Senador Amaral, Estiva, Pouso Alegre e outras. Nossos princípios são a ética, empatia, transparência, responsabilidade e sustentabilidade.',
+      'Somos especialistas em gestão ambiental na indústria, dedicados a cuidar de toda documentação legal e sistemas de controle de impactos. Nossa missão, desde 2017, é conciliar pessoas, negócios e meio ambiente.',
+    teamText:
+      'Equipe Capacitada\nExpertise em Assessoria\nEspecialistas em Biologia, Gestão Ambiental, Sustentabilidade, Educação Ambiental, Perícia e Auditoria Ambiental.\nExperiência com o ramo da indústria, com um trabalho sólido e responsável.',
     partnerOne: {
       name: 'Thaís Scognamiglio',
       role: 'Sócia-fundadora',
       about:
         'Bióloga (2009), com especialização em Gestão Ambiental e Sustentabilidade (2012) e em Educação Ambiental (2016), com experiência na área de consultoria empresarial, gestão de resíduos de obras, projetos de loteamentos urbanos e coordenação de programas ambientais.',
-      image: '/thais.jpeg',
+      image: '', // imagem removida conforme solicitado
     },
     partnerTwo: {
       name: 'Giovanna Caldeira',
@@ -48,8 +50,8 @@ export const copyData = {
               },
               { id: 6, name: 'Dispensa e renovação de Licença Ambiental' },
               { id: 7, name: 'Estudo de Critérios Locacionais' },
-              { id: 8, name: 'Plantas Ambientais' },
-              { id: 9, name: 'Outorga de Uso de Recursos Hídricos e outros' },
+              
+              
             ],
           },
           {
@@ -143,7 +145,7 @@ export const copyData = {
             list: [
               { id: 1, name: 'Laudo de Caracterização de Vegetação' },
               { id: 2, name: 'Projeto de Arborização Urbana' },
-              { id: 3, name: 'Acompanhamento de execução de plantios' },
+              
               { id: 4, name: 'Assessoria técnica e consultoria ambiental' },
               {
                 id: 5,

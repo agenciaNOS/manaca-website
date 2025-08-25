@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 function About({ aboutSection }) {
-  const { introText, partnerOne, partnerTwo } = aboutSection;
+  const { introText, teamText, partnerOne, partnerTwo } = aboutSection;
 
   return (
     <div className="bg-gray bg-cover bg-center py-20" id="about">
@@ -20,6 +20,16 @@ function About({ aboutSection }) {
         <p className="md:text-2xl text-xl text-center text-secondary font-bold py-10">
           {introText}
         </p>
+        <div className="text-center py-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-6">SOBRE NÓS E EQUIPE</h2>
+          <div className="max-w-4xl mx-auto">
+            {teamText.split('\n').map((line, index) => (
+              <p key={index} className="md:text-xl text-lg text-secondary font-semibold mb-3">
+                {line}
+              </p>
+            ))}
+          </div>
+        </div>
       </div>
       <div className="mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-evenly items-center md:items-baseline my-10">

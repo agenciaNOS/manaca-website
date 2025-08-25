@@ -13,8 +13,8 @@ module.exports = {
       black: '#000000',
       blue: colors.blue,
       red: colors.red,
-      secondary: '#5b145c',
-      darkestpurple: '#2a0a2f',
+      secondary: '#34824E', // verde principal substituindo roxo
+      darkestgreen: '#215c36', // verde escuro substituindo roxo
       yellow: colors.yellow,
     },
     extend: {},
