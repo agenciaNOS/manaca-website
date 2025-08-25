@@ -19,49 +19,70 @@ function Contact({ contactSection }) {
   });
 
   const handleSubmit = (event) => {
-    let submitedData = {};
-
-    event.target.parentNode.childNodes.forEach((child) => {
-      if (child.id) {
-        submitedData = {
-          ...submitedData,
-          [child.id]: child.value,
-        };
-      }
-    });
+    event.preventDefault();
+    
+    // Get form data using form elements
+    const form = event.target.closest('form');
+    const formData = new FormData(form);
+    
+    const submitedData = {
+      Name: document.getElementById('Name').value,
+      Email: document.getElementById('Email').value,
+      telephone: document.getElementById('telephone').value,
+      serviceType: document.getElementById('serviceType').value,
+      message: document.getElementById('message').value
+    };
 
     // validate data
     if (
-      !submitedData.Name ||
-      !submitedData.Email ||
-      !submitedData.telephone ||
-      !submitedData.serviceType
+      !submitedData.Name.trim() ||
+      !submitedData.Email.trim() ||
+      !submitedData.telephone.trim() ||
+      !submitedData.serviceType ||
+      submitedData.serviceType === 'Nenhum'
     ) {
-      toast.error('Por favor, preencha todos os campos!');
-
+      toast.error('Por favor, preencha todos os campos obrigatórios!');
       return;
     }
 
     setFormData(submitedData);
 
-    // send data to Notion API
-    fetch('/api/notion', {
+    // send data to sendEmail API
+    fetch('/api/sendEmail', {
       method: 'POST',
-      body: JSON.stringify(submitedData),
-    });
-
-    // clear form
-    event.target.parentNode.childNodes.forEach((child) => {
-      if (child.id) {
-        child.value = '';
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: submitedData.Name,
+        email: submitedData.Email,
+        phone: submitedData.telephone,
+        message: submitedData.message || 'Sem mensagem específica',
+      }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.message === 'Email sent successfully') {
+        toast.success('Mensagem enviada com sucesso! Você será redirecionado em 1 segundo.');
+        
+        // clear form
+         document.getElementById('Name').value = '';
+         document.getElementById('Email').value = '';
+         document.getElementById('telephone').value = '';
+         document.getElementById('serviceType').value = 'Nenhum';
+         document.getElementById('message').value = '';
+        
+        setTimeout(() => {
+          window.location.href = '/'
+        }, 1000);
+      } else {
+        toast.error('Erro ao enviar mensagem. Tente novamente.');
       }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      toast.error('Erro ao enviar mensagem. Tente novamente.');
     });
-
-    toast.success('Mensagem enviada com sucesso! Você será redirecionado em 1 segundo.');
-
-    setTimeout(() => {
-      window.location.href = '/'
-    }, 1000);
 
   };
 
@@ -88,6 +109,7 @@ function Contact({ contactSection }) {
                   <label htmlFor="Name" className="block text-sm font-semibold text-gray-700 mb-2 transition-colors duration-200">Nome Completo *</label>
                   <input
                     id="Name"
+                    name="Name"
                     className="w-full px-4 py-3.5 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200 bg-white hover:border-gray-400 text-base placeholder-gray-500 shadow-sm focus:shadow-md"
                     type="text"
                     placeholder="Digite seu nome completo"
@@ -98,6 +120,7 @@ function Contact({ contactSection }) {
                   <label htmlFor="Email" className="block text-sm font-semibold text-gray-700 mb-2 transition-colors duration-200">E-mail *</label>
                   <input
                     id="Email"
+                    name="Email"
                     className="w-full px-4 py-3.5 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200 bg-white hover:border-gray-400 text-base placeholder-gray-500 shadow-sm focus:shadow-md"
                     type="email"
                     placeholder="seu@email.com"
@@ -108,6 +131,7 @@ function Contact({ contactSection }) {
                   <label htmlFor="telephone" className="block text-sm font-semibold text-gray-700 mb-2 transition-colors duration-200">Telefone *</label>
                   <input
                     id="telephone"
+                    name="telephone"
                     className="w-full px-4 py-3.5 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200 bg-white hover:border-gray-400 text-base placeholder-gray-500 shadow-sm focus:shadow-md"
                     type="tel"
                     placeholder="(00) 00000-0000"
@@ -121,6 +145,7 @@ function Contact({ contactSection }) {
                   <div className="relative">
                     <select
                       id="serviceType"
+                      name="serviceType"
                       className="w-full px-4 py-3.5 pr-12 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200 appearance-none bg-white hover:border-gray-400 text-base shadow-sm focus:shadow-md cursor-pointer"
                       required
                     >
@@ -144,6 +169,7 @@ function Contact({ contactSection }) {
                   <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2 transition-colors duration-200">Mensagem</label>
                   <textarea
                     id="message"
+                    name="message"
                     className="w-full px-4 py-3.5 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200 bg-white hover:border-gray-400 resize-none text-base placeholder-gray-500 shadow-sm focus:shadow-md"
                     rows="5"
                     placeholder="Descreva sua necessidade em detalhes..."
