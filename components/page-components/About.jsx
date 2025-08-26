@@ -60,7 +60,7 @@ function About({ aboutSection }) {
               <div className="flex-shrink-0 mx-auto lg:mx-0">
                 <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-primary/20 hover:ring-accent/20 transition-all duration-300">
                   <Image
-                    src="/thais.jpeg"
+                    src="/thais.png"
                     alt={partnerOne.name}
                     width={192}
                     height={192}
